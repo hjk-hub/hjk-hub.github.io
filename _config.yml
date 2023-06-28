@@ -58,7 +58,7 @@ extensions:
 comments: utteranc  #[disqus, utteranc]
 comments_opts:
   comments_curtain: yes # leave empty to show the disqus embed directly
-  repo: hjk-hub.github.io
+  repo: hjk-hub/hjk-hub.github.io
   issue_term: Bug report
   label: # The GitHub comments label
   theme: github-light
