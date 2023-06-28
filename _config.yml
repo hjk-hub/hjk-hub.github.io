@@ -58,10 +58,10 @@ extensions:
 comments: utteranc  #[disqus, utteranc]
 comments_opts:
   comments_curtain: yes # leave empty to show the disqus embed directly
-  repo: # The GitHub repo URL.  https://utteranc.es/
+  repo: https://github.com/hjk-hub/hjk-hub.github.io.git
   issue_term: # The GitHub issue label
   label: # The GitHub comments label
-  theme: # The GitHub comment's there. e.g. github-dark
+  theme: github-light
   # Disqus
   discus_identifier: # Add your discus identifier
 
