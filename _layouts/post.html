@@ -9,7 +9,7 @@ layout: default
       <a  class="post-list-title" href="{{ post_url }}">{{ page.title }}</a>
       {% include post_meta.html type="post-card-meta" %}
         <div class="post-excerpt">
-            {{ page.content | markdownify | strip_newlines | truncatewords: 100 }}<a class="read-more" href="{{ post_url }}"> read more</a>
+            {{ page.content | strip_html | markdownify | strip_newlines | truncatewords: 100 }}<a class="read-more" href="{{ post_url }}"> read more</a>
         </div>
   </div>
 </section>
@@ -29,7 +29,7 @@ layout: default
         {% include sidebar.html context="post" class="side" id="sidebar" %}
         {% if page.toc %}{% include sidebar-toc.html %}{% endif %}
         {% include github-button.html %}
-        {{page.content | markdownify}}
+        {{page.content | strip_html | markdownify }}
         {% include sidebar.html context="post" class="inline" id="post-end" %}
         <div class="separator"></div>
         {% include author-box.html %}
